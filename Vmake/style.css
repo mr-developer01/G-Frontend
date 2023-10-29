@@ -585,7 +585,7 @@ nav > button{
     border-radius: 10px;
     rotate: -20deg;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: all 1.5s ease;
+    transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 #story-cards > .card:hover{
