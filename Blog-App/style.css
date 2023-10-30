@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Product Sans";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(199, 220, 215, 0.781); */
+}
+
+/* Nav Styles */
+main nav{
+    width: 100%;
+    height: 12%;
+    padding: 0 8vw;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main nav img{
+    width: 14vw;
+}
+
+main nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    font-size: 1.3vw;
+}
+
+.cta button{
+    padding: 0.5vw 1vw;
+    border: 1px solid rgb(253, 239, 239);
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) .5s;
+}
+
+.cta button:nth-child(1){
+    border: none;
+    margin-right: 1vw;
+    background-color: transparent;
+    color: black;
+}
+
+.cta button:nth-child(2):hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* part-1 styles */
+
+.part-1{
+    width: 95%;
+    height: calc(100% - 12%);
+    background-image: url(https://images.unsplash.com/photo-1544456203-0af5a69f5789?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.part-1 .overlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 0 0vw 2vw 6vw;
+    background: linear-gradient(rgba(51, 51, 51, 0), rgba(34, 34, 34, 0.331), rgba(34, 34, 34, 0.694), rgb(0, 0, 0));
+    color: white;
+}
+
+.part-1 .overlay p:nth-child(1){
+    font-size: 1.4vw;
+}
+
+.part-1 .overlay h1:nth-child(2){
+    font-size: 3vw;
+}
+
+.part-1 .overlay p:nth-child(3){
+    width: 50%;
+    font-size: 1vw;
+    color: #dadada;
+}
+
+.part-1 .overlay i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
